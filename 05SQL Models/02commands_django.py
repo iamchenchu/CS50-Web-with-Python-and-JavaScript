@@ -15,9 +15,11 @@ code : from django.urls import path
 from . import views
 url 
 
-python manage.py makemigrations : to start migrations 
-python manage.py migrate : apply the migrations 
+to start migrations : python manage.py makemigrations
+apply the migrations : python manage.py migrate 
 
-run the server : py manage.py runserver
-create an app : py manage.py startapp members
+to run python commands within  the project : python manage.py shell
+
+run the server : python manage.py runserver
+create an app : python manage.py startapp members
 """

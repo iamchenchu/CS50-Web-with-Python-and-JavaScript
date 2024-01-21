@@ -11,8 +11,8 @@ class Airport(models.Model):
 
 # Create your models here.
 class Flight(models.Model):
-    origin = models.ForeignKey(Airport, on_delete = models.CASCADE)       #origin = models.CharField(max_length = 64)
-    destination = models.CharField(max_length = 64)
+    origin = models.ForeignKey(Airport, on_delete = models.CASCADE, related_name = "departures")       #origin = models.CharField(max_length = 64)
+    destination = models.ForeignKey(Airport, on_delete = models.CASCADE, ralated_name = "arrivals")    #destination = models.CharField(max_length = 64)
     duration = models.IntegerField()
 
     def __str__(self):
