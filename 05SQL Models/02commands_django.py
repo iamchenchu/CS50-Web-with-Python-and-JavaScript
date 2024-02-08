@@ -23,5 +23,5 @@ to run python commands within  the project : python manage.py shell
 run the server : python manage.py runserver
 create an app : python manage.py startapp members
 
-Need mote
+Need note here and 
 """
